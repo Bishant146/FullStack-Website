@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap – Bishant Shrestha</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .card-header { background: #4a7a70; }
+    .demo { border-color: #bcd8cf; }
+    .demo-bar { background: #e3efe9; color: #2d4d47; }
+    .demo-inner { background: #f7fbf9; }
+
+    .bs-row { display: flex; gap: 10px; flex-wrap: wrap; }
+    .bs-col {
+      flex: 1; min-width: 120px;
+      padding: 18px 10px;
+      text-align: center;
+      border-radius: 7px;
+      font-size: 14px; font-weight: bold; color: white;
+    }
+    .bs-col:nth-child(1) { background: #2d4d47; }
+    .bs-col:nth-child(2) { background: #4a7a70; }
+    .bs-col:nth-child(3) { background: #5c8a7f; }
+    .bs-col small { font-weight: normal; display: block; margin-top: 4px; opacity: 0.85; }
+    .bs-note { font-size: 13px; color: #555; margin-top: 12px; }
+
+    .bs-components {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-top: 8px;
+    }
+    .bs-comp {
+      background: white;
+      border: 1px solid #bcd8cf;
+      border-radius: 7px;
+      padding: 14px;
+      text-align: center;
+      font-size: 14px;
+      color: #2d4d47;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Hi, I'm Bishant Shrestha.</h1>
+  <div class="module">I'm a dedicated student with a passion for learning, personal growth, and applying knowledge to create meaningful impact.</div>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="fullstack.html">Full Stack</a>
+  <a href="html.html">HTML</a>
+  <a href="css.html">CSS</a>
+  <a href="bootstrap.html" class="active">Bootstrap</a>
+  <a href="javascript.html">JavaScript</a>
+</nav>
+
+<div class="card">
+  <div class="card-header">4. Bootstrap Framework</div>
+  <div class="card-body">
+
+    <p>
+      Bootstrap is a free CSS framework you can add to any webpage. Instead of writing all your own CSS from scratch it gives you ready-made classes to use. It saves a lot of time, especially when building layouts that need to work on different screen sizes.
+    </p>
+
+    <p>
+      The most useful thing I found is the grid system. Bootstrap divides the page into 12 columns and you decide how wide each section is. If you want three equal columns you use <strong>col-md-4</strong> on each one — because 4 + 4 + 4 = 12.
+    </p>
+
+    <pre>&lt;!-- Link Bootstrap at the top of your HTML --&gt;
+&lt;link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"&gt;
+
+&lt;div class="container"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-md-4"&gt;Column 1&lt;/div&gt;
+    &lt;div class="col-md-4"&gt;Column 2&lt;/div&gt;
+    &lt;div class="col-md-4"&gt;Column 3&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+    <p>
+      On a small screen Bootstrap automatically stacks those columns on top of each other — no extra CSS needed. It also comes with ready-made components that you can paste straight into a project.
+    </p>
+
+    <div class="demo">
+      <div class="demo-bar">Live Example — three equal columns using the Bootstrap grid</div>
+      <div class="demo-inner">
+        <div class="bs-row">
+          <div class="bs-col">col-md-4<small>Column 1</small></div>
+          <div class="bs-col">col-md-4<small>Column 2</small></div>
+          <div class="bs-col">col-md-4<small>Column 3</small></div>
+        </div>
+        <p class="bs-note">Each column takes 4 of the 12 available units. On a small screen they stack vertically automatically.</p>
+      </div>
+    </div>
+
+    <p style="margin-top:20px;">Other components Bootstrap includes out of the box:</p>
+    <div class="bs-components">
+      <div class="bs-comp">Navbar</div>
+      <div class="bs-comp">Cards</div>
+      <div class="bs-comp">Buttons</div>
+      <div class="bs-comp">Forms</div>
+      <div class="bs-comp">Modals</div>
+      <div class="bs-comp">Alerts</div>
+    </div>
+
+    <div class="tags" style="margin-top:18px;">
+      <span class="tag tg">12-col Grid</span>
+      <span class="tag tg">Responsive</span>
+      <span class="tag tg">Mobile-First</span>
+      <span class="tag tg">Fast Prototyping</span>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <strong>Bishant Shrestha</strong> &nbsp;|&nbsp; Registration No: 250789809
+  <br>Module Code: CET 138 &nbsp;|&nbsp; Module Title: Full Stack Development
+  <br><span>&copy; 2026</span>
+</footer>
+
+</body>
+</html>

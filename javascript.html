@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript – Bishant Shrestha</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .card-header { background: #4a7a70; color: white; }
+    .demo { border-color: #bcd8cf; }
+    .demo-bar { background: #e3efe9; color: #2d4d47; }
+    .demo-inner { background: #f7fbf9; }
+
+    .conv-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 12px; }
+    .conv-row select,
+    .conv-row input {
+      padding: 8px 12px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: Arial, sans-serif;
+    }
+    .conv-row input { width: 140px; }
+    .conv-btn {
+      padding: 8px 20px;
+      font-size: 14px;
+      font-weight: bold;
+      background: #4a7a70;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: Arial, sans-serif;
+    }
+    .conv-btn:hover { background: #2d4d47; }
+    #conv-out {
+      font-size: 16px;
+      font-weight: bold;
+      color: #2d4d47;
+      background: white;
+      padding: 10px 16px;
+      border-radius: 6px;
+      border: 1px solid #bcd8cf;
+      margin-top: 4px;
+      min-height: 42px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Hi, I'm Bishant Shrestha.</h1>
+  <div class="module">I'm a dedicated student with a passion for learning, personal growth, and applying knowledge to create meaningful impact.</div>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="fullstack.html">Full Stack</a>
+  <a href="html.html">HTML</a>
+  <a href="css.html">CSS</a>
+  <a href="bootstrap.html">Bootstrap</a>
+  <a href="javascript.html" class="active">JavaScript</a>
+</nav>
+
+<div class="card">
+  <div class="card-header">5. JavaScript</div>
+  <div class="card-body">
+
+    <p>
+      JavaScript is what makes a webpage do things. HTML gives it structure, CSS makes it look good, but JavaScript makes it interactive. Things like a button that responds when clicked, a form that validates your input, or content that updates without reloading — that is all JavaScript.
+    </p>
+
+    <p>
+      Here is a simple unit converter I built to demonstrate the basics. It reads a value the user types in, runs a calculation, and writes the result back onto the page without any page reload:
+    </p>
+
+    <pre>function convertUnit() {
+  var type  = document.getElementById("type").value;
+  var value = parseFloat(document.getElementById("amount").value);
+  var result = "";
+
+  if (isNaN(value)) {
+    result = "Please enter a number.";
+  } else if (type === "kgLbs") {
+    result = value + " kg  =  " + (value * 2.20462).toFixed(2) + " lbs";
+  } else if (type === "kmMi") {
+    result = value + " km  =  " + (value * 0.621371).toFixed(2) + " miles";
+  } else if (type === "cF") {
+    result = value + " °C  =  " + (value * 9/5 + 32).toFixed(2) + " °F";
+  } else if (type === "mCm") {
+    result = value + " m  =  " + (value * 100).toFixed(0) + " cm";
+  }
+
+  document.getElementById("output").innerText = result;
+}</pre>
+
+    <p>
+      <strong>getElementById</strong> finds the input on the page and reads what was typed. The function works out the answer and uses <strong>innerText</strong> to write it back into the output paragraph. This is the core pattern JavaScript uses — read something, do something with it, show the result.
+    </p>
+
+    <div class="demo">
+      <div class="demo-bar">Live Example — working unit converter</div>
+      <div class="demo-inner">
+        <div class="conv-row">
+          <select id="type">
+            <option value="kgLbs">kg → lbs</option>
+            <option value="kmMi">km → miles</option>
+            <option value="cF">°C → °F</option>
+            <option value="mCm">metres → cm</option>
+          </select>
+          <input type="number" id="amount" placeholder="Enter value...">
+          <button class="conv-btn" onclick="convertUnit()">Convert</button>
+        </div>
+        <div id="conv-out">Result will appear here...</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <strong>Bishant Shrestha</strong> &nbsp;|&nbsp; Registration No: 250789809
+  <br>Module Code: CET 138 &nbsp;|&nbsp; Module Title: Full Stack Development
+  <br><span>&copy; 2026</span>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

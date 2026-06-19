@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML – Bishant Shrestha</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .card-header { background: #4a7a70; }
+    .demo { border-color: #bcd8cf; }
+    .demo-bar { background: #e3efe9; color: #2d4d47; }
+    .demo-inner { background: #f7fbf9; }
+
+    .html-out h1 { font-size: 22px; margin-bottom: 8px; color: #3d6b63; }
+    .html-out p  { margin-bottom: 8px; color: #333; }
+    .html-out a  { color: #4a7a70; font-weight: bold; text-decoration: underline; }
+
+    .try-box {
+      background: #e3efe9;
+      border: 1px solid #bcd8cf;
+      border-radius: 8px;
+      padding: 18px;
+      margin-top: 18px;
+    }
+    .try-box h4 { font-size: 14px; color: #2d4d47; margin-bottom: 12px; font-weight: bold; }
+    .try-box input {
+      width: 100%;
+      padding: 8px 12px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 8px;
+      font-family: Arial, sans-serif;
+    }
+    .try-box button {
+      padding: 8px 20px;
+      font-size: 14px;
+      font-weight: bold;
+      background: #4a7a70;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: Arial, sans-serif;
+    }
+    .try-box button:hover { background: #2d4d47; }
+    #html-custom-out {
+      margin-top: 12px;
+      padding: 12px;
+      background: white;
+      border-radius: 6px;
+      border: 1px solid #bcd8cf;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Hi, I'm Bishant Shrestha.</h1>
+  <div class="module">I'm a dedicated student with a passion for learning, personal growth, and applying knowledge to create meaningful impact.</div>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="fullstack.html">Full Stack</a>
+  <a href="html.html" class="active">HTML</a>
+  <a href="css.html">CSS</a>
+  <a href="bootstrap.html">Bootstrap</a>
+  <a href="javascript.html">JavaScript</a>
+</nav>
+
+<div class="card">
+  <div class="card-header">2. HTML — HyperText Markup Language</div>
+  <div class="card-body">
+
+    <p>
+      HTML is the foundation of every webpage. It gives the page its structure and content — headings, paragraphs, images, links and forms. Without it the browser has nothing to display. I like to think of it as the skeleton of a website because everything else gets built on top.
+    </p>
+
+    <p>
+      HTML works by wrapping content inside tags. The browser reads those tags and knows how to display each piece. Here is a basic example of a full HTML page:
+    </p>
+
+    <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+    &lt;p&gt;This is my first webpage.&lt;/p&gt;
+    &lt;a href="about.html"&gt;About Me&lt;/a&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+
+    <p>
+      The <strong>&lt;h1&gt;</strong> tag creates a large heading, <strong>&lt;p&gt;</strong> makes a paragraph and <strong>&lt;a&gt;</strong> makes a clickable link. These are the most common tags you use when starting out.
+    </p>
+
+    <p>
+      HTML5 also added semantic tags like <strong>&lt;header&gt;</strong>, <strong>&lt;nav&gt;</strong>, <strong>&lt;main&gt;</strong>, <strong>&lt;article&gt;</strong> and <strong>&lt;footer&gt;</strong>. These are better than using &lt;div&gt; everywhere because they tell the browser exactly what the content is — which also helps with accessibility and search engines.
+    </p>
+
+    <div class="demo">
+      <div class="demo-bar">Live Example — the code above rendered in the browser</div>
+      <div class="demo-inner html-out">
+        <h1>Hello World</h1>
+        <p>This is my first webpage.</p>
+        <a href="#">About Me</a>
+      </div>
+    </div>
+
+    <div class="try-box">
+      <h4>Try it — type your own heading and paragraph:</h4>
+      <input type="text" id="custom-h1" placeholder="Your heading...">
+      <input type="text" id="custom-p"  placeholder="Your paragraph text...">
+      <button onclick="buildHTML()">Build It</button>
+      <div id="html-custom-out"></div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <strong>Bishant Shrestha</strong> &nbsp;|&nbsp; Registration No: 250789809
+  <br>Module Code: CET 138 &nbsp;|&nbsp; Module Title: Full Stack Development
+  <br><span>&copy; 2026</span>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

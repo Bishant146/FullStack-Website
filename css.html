@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS – Bishant Shrestha</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .card-header { background: #4a7a70; }
+    .demo { border-color: #bcd8cf; }
+    .demo-bar { background: #e3efe9; color: #2d4d47; }
+    .demo-inner { background: #f7fbf9; }
+
+    .css-h1 {
+      color: #3d6b63;
+      font-size: 24px;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 16px;
+      transition: color 0.3s;
+    }
+    .css-demo-btn {
+      display: block;
+      margin: 0 auto;
+      padding: 10px 26px;
+      font-size: 15px;
+      font-family: Arial, sans-serif;
+      background: #4a7a70;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .css-demo-btn:hover { background: #2d4d47; }
+
+    .colour-btns {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 16px;
+    }
+    .colour-btns button {
+      padding: 7px 16px;
+      font-size: 13px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Hi, I'm Bishant Shrestha.</h1>
+  <div class="module">I'm a dedicated student with a passion for learning, personal growth, and applying knowledge to create meaningful impact.</div>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="fullstack.html">Full Stack</a>
+  <a href="html.html">HTML</a>
+  <a href="css.html" class="active">CSS</a>
+  <a href="bootstrap.html">Bootstrap</a>
+  <a href="javascript.html">JavaScript</a>
+</nav>
+
+<div class="card">
+  <div class="card-header">3. CSS — Cascading Style Sheets</div>
+  <div class="card-body">
+
+    <p>
+      CSS controls how a webpage looks. If HTML is the skeleton then CSS is the clothes — it handles colours, fonts, spacing and layout. Without CSS a webpage is just plain black text on a white background.
+    </p>
+
+    <p>
+      You write CSS by targeting an HTML element and setting properties on it. Here is a simple example that styles a heading and a button:
+    </p>
+
+    <pre>h1 {
+  color: #3d6b63;
+  font-size: 24px;
+  text-align: center;
+}
+
+button {
+  background-color: #4a7a70;
+  color: white;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2d4d47;
+}</pre>
+
+    <p>
+      The <strong>:hover</strong> rule only fires when the mouse moves over the element — making the page feel interactive without needing JavaScript. CSS also supports media queries which change the layout depending on the screen size, which is how sites look good on both desktop and mobile.
+    </p>
+
+    <div class="demo">
+      <div class="demo-bar">Live Example — styled heading and hover button</div>
+      <div class="demo-inner" style="text-align:center;">
+        <p id="css-heading-demo" class="css-h1">This heading is styled with CSS</p>
+        <button class="css-demo-btn"
+          onmouseover="this.style.background='#2d4d47'"
+          onmouseout="this.style.background='#4a7a70'">
+          Hover over me!
+        </button>
+        <div class="colour-btns">
+          <button style="background:#2d4d47;" onclick="changeColour('#2d4d47')">Deep Teal</button>
+          <button style="background:#4a7a70;" onclick="changeColour('#4a7a70')">Teal</button>
+          <button style="background:#7a9a6a;" onclick="changeColour('#7a9a6a')">Sage</button>
+          <button style="background:#b08968;" onclick="changeColour('#b08968')">Clay</button>
+          <button style="background:#7d6b9e;" onclick="changeColour('#7d6b9e')">Plum</button>
+        </div>
+        <p style="font-size:12px;color:#888;margin-top:10px;">Click a colour button to change the heading colour above</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <strong>Bishant Shrestha</strong> &nbsp;|&nbsp; Registration No: 250789809
+  <br>Module Code: CET 138 &nbsp;|&nbsp; Module Title: Full Stack Development
+  <br><span>&copy; 2026</span>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

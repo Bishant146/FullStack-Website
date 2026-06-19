@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bishant Shrestha – ePortfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .welcome-card .card-header { background: #4a7a70; }
+    .welcome-card .demo { border-color: #bcd8cf; }
+    .welcome-card .demo-bar { background: #e3efe9; color: #2d4d47; }
+    .welcome-card .demo-inner { background: #f7fbf9; }
+
+    .topic-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+    .topic-tile {
+      border-radius: 8px;
+      padding: 20px 18px;
+      color: white;
+      text-decoration: none;
+      display: block;
+      border: 1px solid #bcd8cf;
+    }
+    .topic-tile h3 { font-size: 16px; margin-bottom: 6px; }
+    .topic-tile p  { font-size: 13px; opacity: 0.88; margin: 0; color: white; }
+    .t1 { background: #4a7a70; }
+    .t2 { background: #5c8a7f; }
+    .t3 { background: #3d6b63; }
+    .t4 { background: #5c8a7f; }
+    .t5 { background: #4a7a70; }
+    .topic-tile:hover { opacity: 0.9; transform: translateY(-2px); transition: 0.2s; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Hi, I'm Bishant Shrestha.</h1>
+  <div class="module">I'm a dedicated student with a passion for learning, personal growth, and applying knowledge to create meaningful impact.</div>
+</header>
+
+<nav>
+  <a href="index.html" class="active">Home</a>
+  <a href="fullstack.html">Full Stack</a>
+  <a href="html.html">HTML</a>
+  <a href="css.html">CSS</a>
+  <a href="bootstrap.html">Bootstrap</a>
+  <a href="javascript.html">JavaScript</a>
+</nav>
+
+<div class="card welcome-card">
+  <div class="card-header">Welcome to My ePortfolio</div>
+  <div class="card-body">
+    <p>
+      This portfolio was put together as part of my Full Stack Web Development module. Each section covers one of the five main topics we studied — from understanding what full stack development actually means, through to writing HTML, styling with CSS, using the Bootstrap framework and making pages interactive with JavaScript.
+    </p>
+    <p>
+      I have tried to include working examples in each section so you can see the code in action rather than just reading about it. Use the navigation links above to jump to any topic.
+    </p>
+
+    <div class="topic-grid">
+      <a href="fullstack.html" class="topic-tile t1">
+        <h3>1. Full Stack Development</h3>
+        <p>Frontend, backend, databases and how they connect.</p>
+      </a>
+      <a href="html.html" class="topic-tile t2">
+        <h3>2. HTML</h3>
+        <p>The structure and content of every webpage.</p>
+      </a>
+      <a href="css.html" class="topic-tile t3">
+        <h3>3. CSS</h3>
+        <p>Colours, fonts, layout and responsive design.</p>
+      </a>
+      <a href="bootstrap.html" class="topic-tile t4">
+        <h3>4. Bootstrap</h3>
+        <p>The 12-column grid and ready-made components.</p>
+      </a>
+      <a href="javascript.html" class="topic-tile t5">
+        <h3>5. JavaScript</h3>
+        <p>Making pages interactive with live examples.</p>
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <strong>Bishant Shrestha</strong> &nbsp;|&nbsp; Registration No: 250789809
+  <br>Module Code: CET 138 &nbsp;|&nbsp; Module Title: Full Stack Development
+  <br><span>&copy; 2026</span>
+</footer>
+
+</body>
+</html>
